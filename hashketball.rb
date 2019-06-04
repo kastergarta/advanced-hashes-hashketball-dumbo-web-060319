@@ -115,19 +115,10 @@ def game_hash
   }
 end
 
-# def num_points_scored(name)
-#   player = find_the_player(name)
-#   player.fetch(:points)
-# end
 
-# def find_the_player(name)
-#   players.fetch(name)
-# end
-
-# def shoe_size(name)
-#   player = find_the_player(name)
-#   player.fetch(:shoe)
-# end
+def find_the_player(name)
+  players.fetch(name)
+end
 
 def num_points_scored(name)
   player = find_the_player(name)
@@ -170,10 +161,6 @@ end
 
 def find_the_team(team_name)
   teams.find {|team| team.fetch(:team_name) == team_name}
-end
-
-def find_the_player(name)
-  players.fetch(name)
 end
 
 def player_biggest_shoe_size
